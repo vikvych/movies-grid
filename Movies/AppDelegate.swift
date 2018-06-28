@@ -12,10 +12,21 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var flowCoordinator: MainFlowCoordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let navigationController = UINavigationController()
+        let flowCoordinator = MainFlowCoordinator(navigationController: navigationController,
+                                                  dependencyContainer: DependencyContainer.defaultContainer())
+        
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        flowCoordinator.showMovies()
+        
+        self.window = window
+        self.flowCoordinator = flowCoordinator
+        
         return true
     }
 

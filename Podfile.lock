@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
+  - Bond (6.8.3):
+    - Differ (~> 1.0)
+    - ReactiveKit (~> 3.9)
+  - Differ (1.2.3)
+  - Layoutless (0.1.3)
+  - ReactiveKit (3.9.6)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireImage (~> 3.3)
+  - Bond
+  - Layoutless
+  - ReactiveKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
+    - Bond
+    - Differ
+    - Layoutless
+    - ReactiveKit
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  Bond: d6d25c0cb90459b9d27197251405c6db254da4cf
+  Differ: 061f3298ea9408494c43b530c44583e555884daf
+  Layoutless: e5e27be9189306218c9e850fd21a311528f60028
+  ReactiveKit: 804d3093ad42dee0de19e42d4f7dcae9c14364b0
+
+PODFILE CHECKSUM: 942925dab57b8b61435b964b9d97f92dd5b53947
+
+COCOAPODS: 1.5.3
